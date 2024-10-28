@@ -87,6 +87,33 @@ body, html {
     background-color: #FCBB32;
 }
 
+.nav-tools-button {
+    font-size: 22px;
+    color: chartreuse;
+    text-shadow: 1px 1px black;
+    margin-left: 25px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.nav-tools-button:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: chartreuse;
+}
+
+.tools-text {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: chartreuse;
+}
+
+.tools-text-small {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
 .content {
     display: flex;                  
     flex-direction: column;         
@@ -101,6 +128,31 @@ body, html {
     max-height: 80vh;
 }
 
+.content-tool {
+    display: flex;                  
+    flex-direction: column;         
+    justify-content: center;        
+    align-items: center;            
+    height: 100vh;                 
+    text-align: center;             
+    padding: 20px;
+    color: #fff;
+    text-shadow: 2px 2px black;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.content-tool h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: chartreuse;
+}
+
+.content-tool p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
 
 .content h1 {
     font-size: 26px;
@@ -128,12 +180,46 @@ body, html {
 }
 
 .post-image {
-    max-width: 100%;        /* Allow the image to scale down based on container width */
-    max-height: 512px;      /* Limit the height to 512 pixels */
-    width: auto;            /* Let the width adjust automatically */
-    height: auto;           /* Let the height adjust automatically */
-    object-fit: cover;      /* Ensures the image covers the entire area without distorting the aspect ratio */
-    border-radius: 5px;     /* Rounded corners for the image */
+    max-width: 100%;
+    max-height: 512px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.post-tool {
+    background-color: #2a2d30;
+    border: 1px solid chartreuse;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.post-tool-image {
+    max-width: 100%;
+    max-height: 512px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.download-tool-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: chartreuse;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px black;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-tool-btn:hover {
+    background-color: rgb(106, 212, 0);
 }
 
 .download-btn {
@@ -143,6 +229,7 @@ body, html {
     background-color: #fc0335;
     color: #fff;
     text-decoration: none;
+    text-shadow: 1px 1px black;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
